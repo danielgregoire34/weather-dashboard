@@ -26,14 +26,36 @@
 </div>
 
 
-<div class ="weatherForcast">
-    <h2>Weather Forcasat</h2>
-    <p class="weatherForcastResults"></p>
+<div class="display" id="current-weather-container">
+    <div class="current-weather-title d-inline">
+    <h2>5-Day Forcast: </h2>
+    <p class="date"></p>
+    <div id="icon" class="icon">
+        <img id="icon" class="icon d-inline" src="" alt="">
     </div>
-    
+    </div>
+    <div>
+        <p class="current-temp">Temp: </p>
+        <p class="current-wind">Wind: </p>
+        <p class="current-humidity">Humidity: </p>
+    </div>
+</div>
+
+
+<div class="forcast2" id="forcast2">
+    <p class="hour" id="hours2"></p>
+    <div class="icon">
+    <img id="icon2" class="icon2" src="" alt="">
+    </div>
+    <p class="temperature" id="temp2"></p>
+    <p class="humidity" id="humid2"></p>
+</div>
+
+
+
 
 
 <script src="script.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 </body>
 </html>
