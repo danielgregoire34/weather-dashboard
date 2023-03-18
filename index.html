@@ -4,9 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.10/css/weather-icons.min.css">
+    <link rel="stylesheet" href="./style.css">
     <title>Weather DashBoard</title>
 </head>
 <body>
+    <header>
+        <h1>Weather Dashboard</h1>
+    </header>
+
+<div class ="weatherSearch">
+    <form class ="searchForm">
+        <input type="text" id="textSearch" placeholder="Search">
+        <button class="searchBtn" id="searchBtn">Search</button>
+    </form>
+</div>
+
+<div class ="lastSearch">
+<h2>Last Search</h2>
+<p class="lastSearchResults"></p>
+</div>
+
+
+<div class ="weatherForcast">
+    <h2>Weather Forcasat</h2>
+    <p class="weatherForcastResults"></p>
+    </div>
     
+
+
+<script src="script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </body>
 </html>
