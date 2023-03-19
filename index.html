@@ -6,53 +6,110 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.10/css/weather-icons.min.css">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <title>Weather DashBoard</title>
 </head>
 <body>
-    <header>
+    <header class="header w3-center w3-bar-item w3-red">
         <h1>Weather Dashboard</h1>
     </header>
 
-<div class ="weatherSearch">
-    <form class ="searchForm">
-        <input type="text" id="textSearch" placeholder="Search">
-        <button class="searchBtn" id="searchBtn">Search</button>
-    </form>
-</div>
+<div class="w3-row">
 
-<div class="lastSearchHistory" id="lastSearchHistory">
-    <div class ="lastSearch">
-        <h2>Last Search</h2>
-        <p class="lastSearchResults"></p>
+
+    <div class ="weatherSearch">
+        <form class ="searchForm">
+            <input type="text" id="textSearch" placeholder="Search">
+            <button class="w3-button w3-red searchBtn" id="searchBtn">Search</button>
+        </form>
+    </div>
+    
+    <div class="lastSearchHistory w3-container w3-col w3-container" style="width: 15%" id="lastSearchHistory">
+        <div class ="lastSearch">
+            <h2>Last Search</h2>
+            <p class="lastSearchResults"></p>
+            </div>
+            
+    </div>
+    <div class="postweather display w3-col w3-container" id="current-weather-container" style="width: 85%">
+        <div class="current-weather-title d-inline w3-card-4" style="width:40%">
+        <h2 class="w3-center">Today</h2>
+        <p class="date"></p>
+        <div id="icon" class="icon">
+            <img id="icon" class="icon d-inline" src="" alt="">
         </div>
-        
+        <div>
+            <p class="current-temp">Temp: </p>
+            <p class="current-wind">Wind: </p>
+            <p class="current-humidity">Humidity: </p>
+        </div>
+        </div>
+    
+        <h2>5-Day Forcast: </h2>
+
+<div class="w3-row">
+
+    <div class="w3-col forcast2 w3-card-4 w3-container w3-red" style="width:20%" id="forcast2">
+        <p class="hour" id="hours2"></p>
+        <div class="icon">
+        <img id="icon2" class="icon2" src="" alt="">
+        </div>
+        <p class="temperature" id="temp2"></p>
+        <p class="wind" id="wind2"></p>
+        <p class="humidity" id="humid2"></p>
+    </div>
+    
+    <div class="w3-col forcast2 w3-card-4 w3-container w3-red" style="width:20%" id="forcast3">
+        <p class="hour" id="hours3"></p>
+        <div class="icon">
+        <img id="icon3" class="icon3" src="" alt="">
+        </div>
+        <p class="temperature" id="temp3"></p>
+        <p class="wind" id="wind3"></p>
+        <p class="humidity" id="humid3"></p>
+    </div>
+
+    <div class="w3-col forcast2 w3-card-4 w3-container w3-red" style="width:20%" id="forcast4">
+        <p class="hour" id="hours4"></p>
+        <div class="icon">
+        <img id="icon4" class="icon4" src="" alt="">
+        </div>
+        <p class="temperature" id="temp4"></p>
+        <p class="wind" id="wind4"></p>
+        <p class="humidity" id="humid4"></p>
+    </div>
+
+    <div class="w3-col forcast2 w3-card-4 w3-container w3-red" style="width:20%" id="forcast5">
+        <p class="hour" id="hours5"></p>
+        <div class="icon">
+        <img id="icon5" class="icon5" src="" alt="">
+        </div>
+        <p class="temperature" id="temp5"></p>
+        <p class="wind" id="wind5"></p>
+        <p class="humidity" id="humid5"></p>
+    </div>
+
+    <div class="w3-col forcast2 w3-card-4 w3-container w3-red" style="width:20%" id="forcast6">
+        <p class="hour" id="hours6"></p>
+        <div class="icon">
+        <img id="icon6" class="icon6" src="" alt="">
+        </div>
+        <p class="temperature" id="temp6"></p>
+        <p class="wind" id="wind6"></p>
+        <p class="humidity" id="humid6"></p>
+    </div>
+
+
+</div>       
+
+
+    </div>
+
+
 </div>
 
 
-<div class="display" id="current-weather-container">
-    <div class="current-weather-title d-inline">
-    <h2>5-Day Forcast: </h2>
-    <p class="date"></p>
-    <div id="icon" class="icon">
-        <img id="icon" class="icon d-inline" src="" alt="">
-    </div>
-    </div>
-    <div>
-        <p class="current-temp">Temp: </p>
-        <p class="current-wind">Wind: </p>
-        <p class="current-humidity">Humidity: </p>
-    </div>
-</div>
 
-
-<div class="forcast2" id="forcast2">
-    <p class="hour" id="hours2"></p>
-    <div class="icon">
-    <img id="icon2" class="icon2" src="" alt="">
-    </div>
-    <p class="temperature" id="temp2"></p>
-    <p class="humidity" id="humid2"></p>
-</div>
 
 
 
