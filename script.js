@@ -46,37 +46,14 @@ var textSearch = document.getElementById('textSearch').value;
         console.log(response);
         console.log(lon);
         console.log(lat);
-        fetch(`https://api.openweathermap.org/data/2.5/forcast?lat=${lat}&lon=${lon}&appid=${dgWeatherKey}`)
+        fetch(`https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&units=imperial&appid=${dgWeatherKey}`)
         .then(function(response){
             return response.json();
         })
         .then(function(response){
             console.log(response)
-    
-            var icon = response.list[0].weather[0].icon;
-            var icon = 'http://openweathermap.org/img/w/' + icon + ".png";
-            $('img.icon1').attr('src', icon);
-            
-            var hours = response.list[0].dt_txt.substring(0, 10);
-            $('p#hours1').text('Date: ' + hours);
-
-            var temperature = response.list[0].main.temp_max;
-            $('p#temp1').text('Temp: ' + temperature + ' Degrees Fahrenheit');
-        
-            var winds = response.list[0].wind.speed;
-            $('p#wind1').text('Wind: ' + winds + 'mph');
-        
-            var humid = response.list[0].main.humid;
-            $('p#humid1').text('Humidity: ' + humid + '%');
-        
-        
-        
-    
+            forcastOne(response);
         })
-    
-
-
-
 
 
     })
@@ -84,9 +61,31 @@ var textSearch = document.getElementById('textSearch').value;
 
 }
 
+function forcastOne(response)
+{
+    var icon = response.list[0].weather[0].icon;
+    var icon = 'http://openweathermap.org/img/w/' + icon + ".png";
+    $('img.icon2').attr('src', icon);
+    
+    var hours = response.list[0].dt_txt.substring(0, 10);
+    $('p#hours2').text('Date: ' + hours);
+
+    var temperature = response.list[0].main.temp_max;
+    $('p#temp2').text('Temp: ' + temperature + ' Degrees Fahrenheit');
+
+    var winds = response.list[0].wind.speed;
+    $('p#wind2').text('Wind: ' + winds + 'mph');
+
+    var humid = response.list[0].main.humid;
+    $('p#humid2').text('Humidity: ' + humid + '%');
+
+}
+
+
 
 function searchHistory()
 {
+var textSearch = document.getElementById('textSearch').value;
 
 for (var i=0;i<lastSearches.length;i++)
 {
