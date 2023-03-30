@@ -1,4 +1,4 @@
-# Module 6 Weather Dashboard
+#Weather Dashboard
 
 ## Summary 
 The application tracks weather in any city you enter into the search bar.
