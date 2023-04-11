@@ -10,9 +10,9 @@ The application utlizes a weather API to track what the forcast will be within t
 ![Screenshot of weather application](assets/weatherAPIScreenshot.PNG)
 
 ## Links 
-Github: https://github.com/danielgregoire34/gregoire-daniel-module6
+Github: https://github.com/danielgregoire34/weather-dashboard
 
-Website:https://danielgregoire34.github.io/gregoire-daniel-module6/
+Website:https://danielgregoire34.github.io/weather-dashboard
 
 ## License
 This application is under the MIT License.
